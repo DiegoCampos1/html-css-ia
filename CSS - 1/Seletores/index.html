@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Seletores CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Seletores em CSS</h1>
+  <p>Seletores são usados para escolher quais elementos HTML serão estilizados.</p>
+
+  <h2>1. Seletor de Elemento (Tag)</h2>
+  <p>Este parágrafo é estilizado com o seletor de elemento: <code>p</code></p>
+
+  <h2>2. Seletor de Classe</h2>
+  <div class="destaque">
+    Esta <code>div</code> usa a classe <code>.destaque</code>
+  </div>
+
+  <h2>3. Seletor de ID</h2>
+  <p id="importante">Este parágrafo usa o seletor de ID <code>#importante</code></p>
+
+  <h2>4. Seletor Universal</h2>
+  <p>Tudo na página (corpo, listas, divs, etc.) recebe uma margem básica pelo seletor <code>*</code></p>
+
+  <h2>5. Seletor de Agrupamento</h2>
+  <h3>Esse <code>h3</code> e o próximo <code>h4</code> usam o mesmo estilo definido com <code>h3, h4 {}</code></h3>
+  <h4>Outro título agrupado</h4>
+
+  <h2>6. Seletor Descendente (espaço)</h2>
+  <div class="container">
+    <p>Esse parágrafo está dentro de uma <code>div.container</code> e é estilizado com <code>.container p</code></p>
+  </div>
+
+  <h2>7. Seletor de Filho Direto (>)</h2>
+  <div class="pai">
+    <p>Esse parágrafo é filho direto e é afetado por <code>.pai > p</code></p>
+    <div>
+      <p>Esse parágrafo NÃO é afetado, pois está dentro de outro elemento</p>
+    </div>
+  </div>
+
+  <h2>8. Seletor de Atributo</h2>
+  <a href="#">Link normal</a><br>
+  <a href="#" target="_blank">Link com <code>target="_blank"</code></a>
+
+</body>
+</html>

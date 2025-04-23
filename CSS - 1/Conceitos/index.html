@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Introdução ao CSS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e8eaf6;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #3f51b5;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #3f51b5;
+      border-bottom: 2px solid #c5cae9;
+      padding-bottom: 5px;
+    }
+
+    pre {
+      background-color: #eceff1;
+      padding: 10px;
+      border-left: 4px solid #3f51b5;
+      overflow-x: auto;
+    }
+
+    code {
+      background-color: #eeeeee;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Introdução ao CSS</h1>
+    <p>Estilizando a web com elegância e organização</p>
+  </header>
+
+  <nav>
+    <a href="#o-que-e-css">O que é CSS?</a>
+    <a href="#separacao">Separando estilo do conteúdo</a>
+    <a href="#estrutura">Estrutura de uma regra CSS</a>
+  </nav>
+
+  <main>
+    <section id="o-que-e-css">
+      <h2>O que é CSS e por que é usado?</h2>
+      <p>
+        CSS (<strong>Cascading Style Sheets</strong>) é uma linguagem usada para estilizar documentos HTML ou XML. 
+        Com ele, controlamos o <strong>layout, cores, fontes e espaçamentos</strong> de páginas web.
+      </p>
+      <p>
+        <strong>Importância:</strong> O CSS é essencial para criar sites mais bonitos, modernos e organizados.
+        Ele separa o visual do conteúdo, facilitando a manutenção do código e permitindo que o design 
+        seja alterado sem mexer no HTML.
+      </p>
+    </section>
+
+    <section id="separacao">
+      <h2>Separando Estilo do Conteúdo</h2>
+      <p>
+        Um dos princípios mais importantes do desenvolvimento web é separar o conteúdo (HTML) do estilo (CSS).
+      </p>
+      <ul>
+        <li><strong>HTML:</strong> define a estrutura e o significado do conteúdo (títulos, parágrafos, listas, imagens).</li>
+        <li><strong>CSS:</strong> define como esses elementos devem parecer (cores, fontes, posicionamento).</li>
+      </ul>
+      <p>
+        Essa separação melhora a clareza, reutilização de estilos e permite que designers e desenvolvedores trabalhem juntos com eficiência.
+      </p>
+    </section>
+
+    <section id="estrutura">
+      <h2>Estrutura de uma Regra CSS</h2>
+      <p>Uma regra CSS é formada por três partes:</p>
+
+      <ul>
+        <li><strong>Seletor:</strong> Indica qual elemento HTML será estilizado.</li>
+        <li><strong>Propriedade:</strong> Especifica o que será modificado (ex: cor, fonte, tamanho).</li>
+        <li><strong>Valor:</strong> Define o valor da propriedade (ex: <code>blue</code>, <code>16px</code>, <code>bold</code>).</li>
+      </ul>
+
+      <h3>Exemplo:</h3>
+      <pre><code>
+h1 {
+  color: blue;
+  font-size: 32px;
+}
+      </code></pre>
+      <p>No exemplo acima, o seletor é <code>h1</code>, a propriedade é <code>color</code> e o valor é <code>blue</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 – Aula de Introdução ao CSS - Diego Campos 
+  </footer>
+
+</body>
+</html>

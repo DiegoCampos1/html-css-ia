@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formas de Aplicar CSS</title>
+
+  <!-- CSS Interno: definido dentro da tag <style> -->
+  <style>
+    /* Estilo aplicado ao exemplo interno */
+    .interno {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      padding: 10px;
+      border-left: 4px solid #2196f3;
+      margin-bottom: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Formas de Aplicar CSS</h1>
+
+  <p>
+    O CSS pode ser aplicado de três formas principais: <strong>inline</strong>, <strong>interno</strong> e <strong>externo</strong>.
+    Cada abordagem tem sua utilidade, vantagens e desvantagens.
+  </p>
+
+  <h2>1. CSS Inline</h2>
+  <p>
+    O estilo é aplicado diretamente no elemento HTML usando o atributo <code>style</code>.
+  </p>
+  <p style="color: white; background-color: #4caf50; padding: 10px;">
+    Este parágrafo usa <strong>CSS inline</strong> para definir cor de texto, fundo e espaçamento.
+  </p>
+
+  <h2>2. CSS Interno</h2>
+  <p>
+    O CSS é escrito dentro da própria página HTML, dentro da tag <code>&lt;style&gt;</code>, localizada no <code>&lt;head&gt;</code>.
+  </p>
+
+  <div class="interno">
+    Este bloco foi estilizado com <strong>CSS interno</strong> usando uma classe chamada <code>.interno</code>.
+  </div>
+
+  <h2>3. CSS Externo</h2>
+  <p>
+    O CSS externo é armazenado em um arquivo separado (ex: <code>estilo.css</code>) e vinculado à página HTML usando a tag <code>&lt;link&gt;</code>.
+  </p>
+  <p>
+    Exemplo da linha que liga o CSS externo ao HTML (inserida no <code>&lt;head&gt;</code>):
+  </p>
+
+  <pre><code>&lt;link rel="stylesheet" href="estilo.css"&gt;</code></pre>
+
+  <p><strong>Vantagem:</strong> permite aplicar o mesmo estilo a várias páginas e facilita a manutenção do projeto.</p>
+
+  <hr>
+
+  <h3>Resumo:</h3>
+  <ul>
+    <li><strong>Inline:</strong> Rápido e direto, mas difícil de manter em projetos grandes.</li>
+    <li><strong>Interno:</strong> Útil para projetos pequenos ou testes.</li>
+    <li><strong>Externo:</strong> Melhor prática para projetos reais e escaláveis.</li>
+  </ul>
+
+</body>
+</html>
