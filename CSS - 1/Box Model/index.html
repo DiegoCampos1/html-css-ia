@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelo de Caixa no CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #3f51b5;
+    }
+
+    pre {
+      background-color: #eceff1;
+      padding: 10px;
+      border-left: 4px solid #607d8b;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    code {
+      background-color: #eeeeee;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .exemplo {
+      background-color: #c5cae9;
+      padding: 20px;
+      border: 2px solid #3f51b5;
+      margin: 20px 0;
+      width: 200px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Modelo de Caixa no CSS</h1>
+
+  <img src="https://miro.medium.com/v2/resize:fit:965/1*kGMWtZihmaUhxZI5ZVicLA.png" alt="Modelo de Caixa">
+
+  <p>
+    O Modelo de Caixa é um conceito fundamental no CSS que descreve como os elementos HTML são representados como caixas retangulares. 
+    Cada elemento é tratado como uma caixa que envolve:
+  </p>
+
+  <ul>
+    <li><strong>Conteúdo (Content)</strong></li>
+    <li><strong>Preenchimento (Padding)</strong></li>
+    <li><strong>Borda (Border)</strong></li>
+    <li><strong>Margem (Margin)</strong></li>
+  </ul>
+
+  <h2>Conteúdo (Content)</h2>
+  <p>É a área onde o texto, imagem ou outro conteúdo é exibido. Suas dimensões podem ser controladas com <code>width</code> e <code>height</code>.</p>
+
+  <pre><code>
+div {
+  width: 200px;
+  height: 100px;
+}
+  </code></pre>
+
+  <div class="exemplo">
+    Exemplo de caixa com largura de 200px e altura de 100px.
+  </div>
+
+  <h2>Preenchimento (Padding)</h2>
+  <p>O preenchimento é o espaço interno entre o conteúdo e a borda do elemento.</p>
+
+  <pre><code>
+div {
+  padding: 10px;
+}
+  </code></pre>
+
+  <p>
+    <strong>Dica:</strong> Você pode controlar cada lado separadamente:
+    <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code> e <code>padding-left</code>.
+  </p>
+
+  <h2>Borda (Border)</h2>
+  <p>A borda envolve o conteúdo e o padding. Você pode definir a largura, estilo e cor da borda.</p>
+
+  <pre><code>
+div {
+  border: 2px solid black;
+}
+  </code></pre>
+
+  <p>
+    <strong>Principais propriedades:</strong>
+    <ul>
+      <li><code>border-width</code> (largura da borda)</li>
+      <li><code>border-style</code> (tipo: sólido, tracejado, etc.)</li>
+      <li><code>border-color</code> (cor da borda)</li>
+    </ul>
+  </p>
+
+  <h2>Margem (Margin)</h2>
+  <p>A margem é o espaço externo entre a borda do elemento e os elementos ao redor.</p>
+
+  <pre><code>
+div {
+  margin: 15px;
+}
+  </code></pre>
+
+  <p>
+    <strong>Dica:</strong> Assim como o padding, você pode usar:
+    <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code> e <code>margin-left</code>.
+  </p>
+
+</body>
+</html>

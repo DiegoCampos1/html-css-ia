@@ -1,125 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Exercícios de CSS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-      max-width: 900px;
-      margin-inline: auto;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercícios de CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        max-width: 900px;
+        margin-inline: auto;
+      }
 
-    h1 {
-      color: #3f51b5;
-      border-bottom: 2px solid #c5cae9;
-      padding-bottom: 5px;
-    }
+      h1 {
+        color: #3f51b5;
+        border-bottom: 2px solid #c5cae9;
+        padding-bottom: 5px;
+      }
 
-    h2 {
-      color: #3949ab;
-      margin-top: 30px;
-    }
+      h2 {
+        color: #3949ab;
+        margin-top: 30px;
+      }
 
-    h3 {
-      margin-top: 15px;
-    }
+      h3 {
+        margin-top: 15px;
+      }
 
-    ul, ol {
-      margin-left: 20px;
-      margin-bottom: 10px;
-    }
+      ul,
+      ol {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
 
-    code {
-      background-color: #eeeeee;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
+      code {
+        background-color: #eeeeee;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+      }
 
-    hr {
-      margin: 40px 0;
-      border: none;
-      border-top: 2px dashed #ccc;
-    }
+      hr {
+        margin: 40px 0;
+        border: none;
+        border-top: 2px dashed #ccc;
+      }
 
-    p {
-      margin-bottom: 10px;
-    }
+      p {
+        margin-bottom: 10px;
+      }
 
-    li {
-      margin-bottom: 5px;
-    }
-  </style>
-</head>
-<body>
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercícios: Aplicando CSS na prática</h1>
 
-  <h1>Exercícios: Aplicando CSS na prática</h1>
+    <h2>Exercício 1 – Estilo básico com seletor de elemento</h2>
+    <p>
+      <strong>Objetivo:</strong> Criar um arquivo HTML e estilizar títulos e
+      parágrafos usando CSS.
+    </p>
 
-  <h2>Exercício 1 – Estilo básico com seletor de elemento</h2>
-  <p><strong>Objetivo:</strong> Criar um arquivo HTML e estilizar títulos e parágrafos usando CSS.</p>
-
-  <h3>Instruções:</h3>
-  <ol>
-    <li>Crie um novo arquivo chamado <code>exercicio1.html</code>.</li>
-    <li>Adicione pelo menos:
-      <ul>
-        <li>1 título com a tag <code>&lt;h1&gt;</code></li>
-        <li>2 subtítulos com <code>&lt;h2&gt;</code></li>
-        <li>3 parágrafos com <code>&lt;p&gt;</code></li>
-      </ul>
-    </li>
-    <li>Use CSS (interno ou externo) para:
-      <ul>
-        <li>Mudar a cor dos títulos</li>
-        <li>Alterar a fonte e o tamanho dos parágrafos</li>
-        <li>Adicionar espaçamento entre os elementos</li>
-      </ul>
-    </li>
-  </ol>
-
-  <hr>
-
-  <h2>Exercício 2 – Estilizando um perfil fictício</h2>
-  <p><strong>Objetivo:</strong> Criar uma página de perfil fictício com seções bem definidas e aplicar estilos usando diferentes seletores (classe, ID, agrupamento, descendente).</p>
-
-  <h3>Instruções:</h3>
-  <ol>
-    <li>Crie um novo arquivo chamado <code>exercicio2.html</code> com um arquivo de estilos <code>estilo.css</code>.</li>
-    <li>No HTML, crie a seguinte estrutura:
-      <ul>
-        <li>Um <code>h1</code> com seu nome</li>
-        <li>Uma <code>div</code> com ID <code>sobre</code> contendo:
-          <ul>
-            <li>Um <code>h2</code> "Sobre mim"</li>
-            <li>Um <code>p</code> com uma descrição pessoal</li>
-          </ul>
-        </li>
-        <li>Uma <code>section</code> com classe <code>habilidades</code> contendo:
-          <ul>
-            <li>Um <code>h2</code> "Habilidades"</li>
-            <li>Uma lista com pelo menos 3 habilidades</li>
-          </ul>
-        </li>
-        <li>Uma <code>div</code> com links para redes sociais (LinkedIn, GitHub, etc)</li>
-      </ul>
-    </li>
-    <li>No CSS:
-      <ul>
-        <li>Use o seletor de ID para estilizar a seção #sobre</li>
-        <li>Use o seletor de classe para estilizar a section.habilidades</li>
-        <li>Use o seletor descendente (ex: <code>.habilidades li</code>) para formatar os itens da lista</li>
-        <li>Use o seletor de atributo para estilizar links externos</li>
-        <li>Adicione cores, espaçamento e fontes diferentes em cada parte</li>
-      </ul>
-    </li>
-  </ol>
-
-  <p><strong>Dica:</strong> Capriche no visual, use a criatividade e os conhecimentos que você já tem de HTML e CSS!</p>
-
-</body>
+    <h3>Instruções:</h3>
+    <ol>
+      <li>Crie um novo arquivo chamado <code>exercicio1.html</code>.</li>
+      <li>
+        Adicione pelo menos:
+        <ul>
+          <li>1 título com a tag <code>&lt;h1&gt;</code></li>
+          <li>2 subtítulos com <code>&lt;h2&gt;</code></li>
+          <li>3 parágrafos com <code>&lt;p&gt;</code></li>
+        </ul>
+      </li>
+      <li>
+        Use CSS (interno ou externo) para:
+        <ul>
+          <li>Mudar a cor dos títulos</li>
+          <li>Alterar a fonte e o tamanho dos parágrafos</li>
+          <li>Adicionar espaçamento entre os elementos</li>
+        </ul>
+      </li>
+    </ol>
+    <hr />
+    <h2>Exercício 2 – Criando com caixas um html semantico</h2>
+    <p>
+      <strong>Objetivo:</strong> Criar uma página HTML com estrutura semântica e
+      aplicar estilos usando seletores de classe e ID.
+    </p>
+    <h3>Instruções:</h3>
+    <ol>
+      <li>
+        Crie um novo arquivo chamado <code>exercicio2.html</code> com um arquivo
+        de estilos <code>style.css</code>.
+      </li>
+      <img
+        src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*l-47gdhkXSfdQqCnC6qbqQ.png"
+        alt="Modelo de Caixa"
+      /><br />
+      <a
+        href="https://medium.com/@Bharat2044/what-are-semantics-in-html-e5b55c61f354"
+        target="_blank"
+        >O que é html semantico?</a
+      >
+      <li>
+        No HTML, crie a seguinte estrutura:
+        <ul>
+          <li>
+            Conforme a imagem cria um arquivo html para treinar o modelo de
+            caixas e o html semantico
+          </li>
+          <li>
+            Deve ter cada elemento semantico com um cor de fundo diferente
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <h2>Exercício 3 – Criando e Estilizando uma Tabela</h2>
+    <p>
+      <strong>Objetivo:</strong> Criar uma tabela completa e aplicar diferentes
+      estilos usando CSS.
+    </p>
+    <h3>Instruções:</h3>
+    <ol>
+      <li>
+        Crie um novo arquivo chamado <code>exercicio3.html</code> com um arquivo
+        de estilos <code>estilo.css</code> ou um estilo interno.
+      </li>
+      <li>
+        No HTML, crie a seguinte estrutura:
+        <ul>
+          <li>
+            Uma <code>table</code> com as seguintes colunas no cabeçalho
+            (<code>thead</code>):
+            <ul>
+              <li>Nome</li>
+              <li>Idade</li>
+              <li>Cidade</li>
+            </ul>
+          </li>
+          <li>
+            Preencha o <code>tbody</code> com pelo menos 3 linhas
+            (<code>tr</code>), cada uma representando uma pessoa fictícia.
+          </li>
+        </ul>
+      </li>
+      <li>
+        No CSS, aplique os seguintes estilos:
+        <ul>
+          <li>
+            Alterne as cores das linhas da tabela
+          </li>
+          <li>Adicione uma borda para toda a tabela</li>
+          <li>Centralize o texto das células</li>
+          <li>Deixe o cabeçalho com uma cor de fundo diferente</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      <strong>Desafio bônus:</strong> Deixe a tabela com bordas arredondadas e
+      uma pequena sombra ao redor para melhorar o visual!
+    </p>
+    <h2>Exercício 4 – Estilizando um perfil fictício</h2>
+    <p>
+      <strong>Objetivo:</strong> Criar uma página de perfil fictício com seções
+      bem definidas e aplicar estilos usando diferentes seletores (classe, ID,
+      agrupamento, descendente).
+    </p>
+    <h3>Instruções:</h3>
+    <ol>
+      <li>
+        Crie um novo arquivo chamado <code>exercicio2.html</code> com um arquivo
+        de estilos <code>estilo.css</code>.
+      </li>
+      <li>
+        No HTML, crie a seguinte estrutura:
+        <ul>
+          <li>Um <code>h1</code> com seu nome</li>
+          <li>
+            Uma <code>div</code> com ID <code>sobre</code> contendo:
+            <ul>
+              <li>Um <code>h2</code> "Sobre mim"</li>
+              <li>Um <code>p</code> com uma descrição pessoal</li>
+            </ul>
+          </li>
+          <li>
+            Uma <code>section</code> com classe
+            <code>habilidades</code> contendo:
+            <ul>
+              <li>Um <code>h2</code> "Habilidades"</li>
+              <li>Uma lista com pelo menos 3 habilidades</li>
+            </ul>
+          </li>
+          <li>
+            Uma <code>div</code> com links para redes sociais (LinkedIn, GitHub,
+            etc)
+          </li>
+        </ul>
+      </li>
+      <li>
+        No CSS:
+        <ul>
+          <li>Use o seletor de ID para estilizar a seção #sobre</li>
+          <li>Use o seletor de classe para estilizar a section.habilidades</li>
+          <li>
+            Use o seletor descendente (ex: <code>.habilidades li</code>) para
+            formatar os itens da lista
+          </li>
+          <li>Use o seletor de atributo para estilizar links externos</li>
+          <li>Adicione cores, espaçamento e fontes diferentes em cada parte</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      <strong>Dica:</strong> Capriche no visual, use a criatividade e os
+      conhecimentos que você já tem de HTML e CSS!
+    </p>
+  </body>
 </html>
