@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício: Display e Visibility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Exercício: Trabalhando com <code>display</code> e <code>visibility</code></h1>
+
+  <p><strong>Objetivo:</strong> Criar uma pequena interface com elementos visuais utilizando diferentes valores das propriedades <code>display</code> e <code>visibility</code>.</p>
+
+  <h2>Instruções:</h2>
+
+  <ol>
+    <li>
+      Crie um arquivo HTML chamado <code>exercicio-display.html</code> e um arquivo CSS separado chamado <code>style.css</code>.
+    </li>
+
+    <li>
+      No HTML, crie os seguintes elementos dentro de <code>&lt;body&gt;</code>:
+      <ul>
+        <li>Um título principal <code>&lt;h1&gt;</code></li>
+        <li>Três <code>&lt;div&gt;</code> com a classe <code>caixa</code>, com textos como "Bloco 1", "Bloco 2", "Bloco 3"</li>
+        <li>Dois <code>&lt;span&gt;</code> com a classe <code>tag-inline</code></li>
+        <li>Uma <code>&lt;div&gt;</code> com a classe <code>ocultar</code></li>
+      </ul>
+    </li>
+
+    <li>
+      No CSS, faça o seguinte:
+      <ul>
+        <li>Use <code>display: block</code> para as <code>.caixa</code> (valores fixos de largura e altura, borda, cor de fundo)</li>
+        <li>Use <code>display: inline</code> para os elementos com <code>.tag-inline</code> (cor de fundo e espaçamento lateral)</li>
+        <li>Defina <code>visibility: hidden</code> para a <code>.ocultar</code>, mas deixe visível o espaço que ela ocupa</li>
+        <li>Crie uma classe chamada <code>.sumir</code> com <code>display: none</code> e aplique ela a um dos blocos</li>
+      </ul>
+    </li>
+
+    <li>
+      Teste o comportamento de visibilidade e layout:
+      <ul>
+        <li>Remova a classe <code>.sumir</code> de um bloco para torná-lo visível novamente</li>
+        <li>Altere de <code>inline</code> para <code>inline-block</code> e veja a diferença</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Desafio extra:</h2>
+  <p>Crie um botão que alterna entre <code>visibility: hidden</code> e <code>visibility: visible</code> usando JavaScript (simples!)</p>
+
+</body>
+</html>

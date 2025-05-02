@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Display e Visibility no CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Display e Visibility no CSS</h1>
+
+  <p>
+    As propriedades <code>display</code> e <code>visibility</code> são usadas para controlar como os elementos HTML aparecem visualmente 
+    e como afetam o layout da página.
+  </p>
+
+  <h2>Propriedade <code>display</code></h2>
+  <p>Controla o modo como um elemento é exibido no layout:</p>
+
+  <h3><code>display: block</code></h3>
+  <p>O elemento ocupa toda a largura disponível e força quebras de linha antes e depois.</p>
+  <div class="box">Exemplo de bloco (div)</div>
+
+  <h3><code>display: inline</code></h3>
+  <p>O elemento ocupa apenas o espaço necessário e não quebra linha.</p>
+  <div class="inline-example">
+    <span>Item 1</span><span>Item 2</span><span>Item 3</span>
+  </div>
+
+  <h3><code>display: inline-block</code></h3>
+  <p>Comporta-se como inline, mas permite definir <code>width</code> e <code>height</code>.</p>
+  <div class="inline-block-example">
+    <span>Caixa 1</span><span>Caixa 2</span>
+  </div>
+
+  <h3><code>display: none</code></h3>
+  <p>Remove o elemento completamente da página (não ocupa espaço).</p>
+  <div class="none-box box">Você não verá isso (display: none)</div>
+  <pre><code>display: none;</code></pre>
+
+  <h2>Propriedade <code>visibility</code></h2>
+  <p>Controla a visibilidade do elemento, mas mantém sua posição no layout.</p>
+
+  <h3><code>visibility: visible</code> (padrão)</h3>
+  <div class="box">Este elemento está visível</div>
+
+  <h3><code>visibility: hidden</code></h3>
+  <div class="box hidden-box">Este elemento está invisível, mas ainda ocupa espaço.</div>
+  <pre><code>visibility: hidden;</code></pre>
+
+  <p>
+    <strong>Resumo:</strong>
+    <ul>
+      <li><code>display: none</code> remove o elemento do layout completamente.</li>
+      <li><code>visibility: hidden</code> apenas o esconde visualmente, mas o espaço ainda está lá.</li>
+    </ul>
+  </p>
+
+</body>
+</html>
