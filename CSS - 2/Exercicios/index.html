@@ -47,8 +47,36 @@
     </li>
   </ol>
 
-  <h2>Desafio extra:</h2>
-  <p>Crie um botão que alterna entre <code>visibility: hidden</code> e <code>visibility: visible</code> usando JavaScript (simples!)</p>
 
+  <h1>Exercícios: Posicionamento e Camadas com CSS</h1>
+
+  <p><strong>Objetivo:</strong> Praticar as propriedades <code>position</code> e <code>z-index</code> para entender como os elementos se comportam no layout.</p>
+
+  <hr>
+
+  <h2>Exercício 1 – Caixa Absoluta dentro de Caixa Relativa</h2>
+  <ol>
+    <li>Crie um novo arquivo chamado <code>exercicio-pos-1.html</code> com um arquivo CSS separado ou estilo interno.</li>
+    <li>Crie uma <code>div</code> com classe <code>container</code> (use <code>position: relative</code>, altura e largura definidas, cor de fundo).</li>
+    <li>Dentro dela, crie outra <code>div</code> com classe <code>caixa</code> com <code>position: absolute</code> e posicione-a nos cantos da <code>container</code>.</li>
+    <li>Adicione uma borda para visualizar a posição das caixas.</li>
+    <li>Use <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> para mudar o posicionamento da <code>caixa</code>.</li>
+  </ol>
+
+  <h3>Desafio:</h3>
+  <p>Crie um botão fixo no canto inferior direito da página (<code>position: fixed</code>) que fica visível o tempo todo com um texto como "Voltar ao topo".</p>
+
+  <hr>
+
+  <h2>Exercício 2 – Sticky Header com Z-Index</h2>
+  <ol>
+    <li>Crie um novo arquivo chamado <code>exercicio-pos-2.html</code>.</li>
+    <li>Crie um <code>&lt;header&gt;</code> no topo da página com a classe <code>cabecalho</code> e use <code>position: sticky</code> com <code>top: 0</code>.</li>
+    <li>Dê a ele uma cor de fundo chamativa e um <code>z-index</code> alto para ele ficar acima do conteúdo.</li>
+    <li>Crie vários parágrafos ou seções (<code>&lt;section&gt;</code>) abaixo para que seja possível rolar a página e ver o efeito "grudar".</li>
+  </ol>
+
+  <h2>Exercício 3 - position absolute</h2>
+  <p>Adicione uma imagem no conteúdo e use <code>position: absolute</code> e <code>z-index</code> para sobrepor um elemento de texto sobre ela.</p>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Posicionamento em CSS</title>
+  <link rel="stylesheet" href="style.css">
+<body>
+
+  <h1>Posicionamento de Elementos com CSS</h1>
+  <p>O posicionamento em CSS define como os elementos são localizados na página e como se comportam no layout.</p>
+  <p>Os principais valores da propriedade <code>position</code> são: <strong>static, relative, absolute, fixed, sticky</strong>.</p>
+
+  <h2><code>position: static</code> (padrão)</h2>
+  <p>O elemento é posicionado conforme o fluxo normal do HTML.</p>
+  <div class="caixa static">Posição: static</div>
+
+  <h2><code>position: relative</code></h2>
+  <p>Permite mover o elemento em relação à sua posição original.</p>
+  <div class="caixa relative">Posição: relative<br>top: 20px; left: 30px</div>
+
+  <h2><code>position: absolute</code></h2>
+  <p>Remove o elemento do fluxo e posiciona em relação ao elemento pai mais próximo com <code>position: relative</code>.</p>
+  <div class="absolute-container">
+    <div class="caixa absolute">Posição: absolute</div>
+  </div>
+
+  <h2><code>position: fixed</code></h2>
+  <p>Fixa o elemento na tela, mesmo ao rolar a página.</p>
+  <div class="caixa fixed">Posição: fixed</div>
+
+  <h2><code>position: sticky</code></h2>
+  <p>Fixa o elemento no topo durante o scroll, quando alcança a posição especificada.</p>
+  <div class="sticky-container">
+    <div class="sticky">Posição: sticky (top: 0)</div>
+    <p>Role para ver o efeito do sticky.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt sem nec mi mattis, in blandit justo luctus. Fusce finibus a nibh sit amet tincidunt.</p>
+    <p>...</p>
+  </div>
+
+  <h2>Controle de Camadas com <code>z-index</code></h2>
+  <p>O <code>z-index</code> define qual elemento aparece por cima de outro. Só funciona em elementos posicionados (não <code>static</code>).</p>
+
+  <div class="z-index-demo">
+    <div class="box1">z-index: 1</div>
+    <div class="box2">z-index: 2</div>
+  </div>
+
+  <p>
+    <strong>Resumo:</strong><br>
+    - Elementos com z-index maior ficam acima.<br>
+    - Funciona apenas com <code>relative</code>, <code>absolute</code>, <code>fixed</code> ou <code>sticky</code>.<br>
+    - Pode aceitar valores positivos ou negativos.
+  </p>
+
+</body>
+</html>
